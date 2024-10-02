@@ -1,1 +1,56 @@
 /* Hello */
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    background-color: lightcoral;
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+
+.banner button {
+    height: 30px;
+}
+
+.topsellers {
+    width: 100%;
+    height: 100px;
+    background-color: beige;
+    align-content: center;
+}
+
+.topsellers h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+}
+
+.product {
+    border: 2px solid black;
+}
+
+
+
+.lowerbanner {
+    background-color: darkgray;
+    height: 200px;
+    width: 100%;
+    align-content: center;
+}
+
+.lowerbanner h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+}
