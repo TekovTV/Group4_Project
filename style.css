@@ -7,20 +7,42 @@ body {
 }
 
 .banner {
-    background-color: lightcoral;
-    height: 400px;
+    background-image: url("./Assets/Homepage photos/New release photo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 650px;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 110px 1fr 1fr 1fr 1fr 4fr;
+    grid-template-rows: 110px 100px 100px 100px 100px 50px 90px;
+    font-size: 50pt;
+    font-weight: bold;
 }
 
 .banner button {
-    height: 30px;
+    font-size: 20pt;
+    font-weight: bold;
+    height: 60px;
+    width: 220px;
+    background-color: bisque;
+    color: black;
+    border: 1px solid black;
+    align-self: flex-end;
+    grid-column: 2 / 3;
+    grid-row: 6 / 6;
+}
+
+.banner h1 {
+    grid-column: 2 / 6;
+    grid-row: 3 / 3;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .topsellers {
     width: 100%;
-    height: 100px;
-    background-color: beige;
+    height: 200px;
+    /* background-color: beige; */
     align-content: center;
 }
 
@@ -28,23 +50,46 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 48pt;
 }
 
 .products {
     display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 3;
+    grid-template-columns: repeat(auto-fit, 600px);
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    
 }
 
 .product {
     border: 2px solid black;
+    justify-self: center;
 }
 
+.product button {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: larger;
+}
 
+.productinfo {
+    display: flex;
+    justify-content: center;
+}
+
+.product h4 {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.product p {
+    font-size: 20pt;
+}
 
 .lowerbanner {
     background-color: darkgray;
-    height: 200px;
+    height: 300px;
     width: 100%;
     align-content: center;
 }
@@ -53,4 +98,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.lowerbanner h1 {
+    font-size: 48pt;
 }
