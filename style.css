@@ -1,5 +1,9 @@
 /* Hello */
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* FONTS */
 @font-face {
@@ -12,6 +16,90 @@
     src: url('./Assets/Fonts/Luminari/Luminari-Regular.ttf') format('truetype');
 }
 /* END OF FONTS */
+
+/* Top Header */
+.top-header {
+    background-color: black;
+    color: #ffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Main Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px 20px;
+    background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo h1 {
+  font-size: 24px regular;
+  font-family: luminari;
+  color: #000;
+  margin-left: 20px;
+}
+
+.main-navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.main-navigation a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px Bold;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.main-navigation a:hover {
+  color: #d25454;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-right: 20px;
+}
+
+.icons i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main-navigation {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .main-navigation a {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 10px; /* Increase padding for touch targets */
+  }
+ .icons {
+        flex-direction: column; /* Stack icons vertically */
+        margin-right: 0; /* Remove right margin for vertical layout */
+        gap: 10px; /* Adjust gap between icons */
+    }
+
+
+@media (max-width: 480px) {
+  .main-navigation {
+    gap: 10px; /* Reduce gap for smaller screens */
+  }
+
+  .main-navigation a {
+    font-size: 14px; /* Further adjust font size */
+  }
+}
+}
+
 
 /* MAIN SECTION */
 body {
