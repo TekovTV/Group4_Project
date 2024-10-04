@@ -90,7 +90,7 @@ body {
 }
 
 .lowerbanner {
-    background-color: darkgray;
+    /* background-color: darkgray; */
     height: 300px;
     width: 100%;
     align-content: center;
@@ -103,7 +103,7 @@ body {
 
 .lowerbanner h1 {
     font-size: 48pt;
-
+}
 /* END OF MAIN */
 
 
