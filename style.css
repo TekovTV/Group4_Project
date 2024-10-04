@@ -126,12 +126,19 @@ body {
     font-weight: bold;
     height: 60px;
     width: 220px;
-    background-color: bisque;
+    cursor: pointer;
+    background-color: #E2D9CE;
     color: black;
-    border: 1px solid black;
+    border: transparent;
     align-self: flex-end;
     grid-column: 2 / 3;
     grid-row: 6 / 6;
+    transition: all 0.3s ease-out;
+}
+
+.banner button:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in;
 }
 
 .banner h1 {
@@ -143,8 +150,8 @@ body {
 .topsellers {
     width: 100%;
     height: 200px;
-    /* background-color: beige; */
     align-content: center;
+    text-align: center;
 }
 
 .topsellers h2 {
@@ -165,18 +172,55 @@ body {
 .product {
     
     justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+}
+
+.productimg {
+    grid-column: 2 / 2;
+    grid-row: 2/2;
+}
+
+.productimg:hover {
+    transform: scale(1.01);
+}
+
+.productinfo {
+    grid-column: 2/2;
+    grid-row: 3/3;
+    justify-self: center;
 }
 
 .product button {
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
+    border-color: transparent;
+    background-color: #E2D9CE;
+    color: black;
+    height: 40px;
+    width: 40px;
     font-size: larger;
+    grid-column: 2/2;
+    grid-row: 3/3;
+    justify-self: right;
+    margin-right: 10%;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
 }
 
-.productinfo {
-    display: flex;
-    justify-content: center;
+.product button:hover {
+    background-color: black;
+    color: #E2D9CE;
+    transition: all 0.5s ease-in-out;
+}
+
+.product button:active {
+    transform: scale(1.2);
+    transition: all 0.1s ease-in;
+}
+
+.product i {
+    justify-self: center;
 }
 
 .product h4 {
@@ -186,10 +230,11 @@ body {
 
 .product p {
     font-size: 20pt;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .lowerbanner {
-    /* background-color: darkgray; */
     height: 300px;
     width: 100%;
     align-content: center;
@@ -204,6 +249,7 @@ body {
     font-size: 48pt;
     margin-left: 40px;
     margin-right: 40px;
+    text-align: center;
 }
 /* END OF MAIN */
 
