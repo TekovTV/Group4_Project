@@ -1,6 +1,18 @@
 /* Hello */
 
 
+/* FONTS */
+@font-face {
+    font-family: 'Neutra Display';
+    src: url('./Assets/Fonts/Neutra-Display/NeutraDisplay-Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Luminari';
+    src: url('./Assets/Fonts/Luminari/Luminari-Regular.ttf') format('truetype');
+}
+/* END OF FONTS */
+
 /* MAIN SECTION */
 body {
     padding: 0;
@@ -16,7 +28,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 110px 1fr 1fr 1fr 1fr 4fr;
-    grid-template-rows: 110px 100px 100px 100px 100px 50px 90px;
+    grid-template-rows:110px 100px 100px 100px 100px 50px 90px;
     font-size: 50pt;
     font-weight: bold;
 }
@@ -38,7 +50,6 @@ body {
     grid-column: 2 / 6;
     grid-row: 3 / 3;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .topsellers {
@@ -103,6 +114,8 @@ body {
 
 .lowerbanner h1 {
     font-size: 48pt;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 /* END OF MAIN */
 
@@ -239,6 +252,12 @@ form button .fas{
     color: #24262b;
     background-color: #E2D9CE;
 }
+
+/* Changed h3 font */
+.footer-col h3 {
+    font-family: 'Luminari';
+}
+
 
 hr{
     width: 98%;
