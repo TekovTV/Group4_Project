@@ -1,0 +1,155 @@
+/* Main */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Neutra Display';
+    src: url('./Assets/Fonts/Neutra-Display/NeutraDisplay-Medium.otf') format('truetype');
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.breadcrumb {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    gap: 100px; 
+}
+
+/* Shop Section */
+.shop {
+    flex: 3;
+}
+
+.box {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: stretch; 
+}
+
+.box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content h1 {
+    font-size: 18px;
+    margin: 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content h2 {
+    font-size: 14px;
+    margin: 3px 0 0 0;
+}
+
+.unit {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    margin-top: 10px;
+}
+
+.quantity-label, .subtotal-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-label {
+    margin-right: 5px; 
+}
+
+.unit input {
+    width: 50px; 
+    text-align: center;
+}
+
+.subtotal-wrapper {
+    margin-left: auto; 
+}
+
+.subtotal-label {
+    margin-right: 5px; 
+}
+
+.subtotal {
+    font-weight: bold;
+}
+
+/* Right Bar */
+.right-bar {
+    flex: 1;
+    padding: 20px;
+}
+
+.subtotal-box {
+    padding: 20px;
+    background-color: #e2d9ce;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #272020;
+    color: #e2d9ce;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #403939;
+}
+
+/* Suggested Products */
+.right-bar .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.right-bar .box img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
